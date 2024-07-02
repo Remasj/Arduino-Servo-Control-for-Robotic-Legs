@@ -96,4 +96,6 @@ void loop()
 ```
 
 # circuit image
+<img width="899" alt="Screenshot 2024-07-02 at 11 18 06 AM" src="https://github.com/Remasj/Task2-elec.eng/assets/144160139/a762725b-4cb6-4a45-8072-f5df73aacde6">
+
 
