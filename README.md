@@ -1,6 +1,28 @@
 # Task2-elec.eng
+# Introduction
 
-# code
+In this task, I used the app Tinkercad to give me a simulation of how the Arduino Uno R3 can help me power servo motors and eventually use them in robotics.
+
+__Components:__ Arduino Uno R3, a small breadboard, 6 Micro servos, and an external power supply of 4 1.5V batteries, along with multiple wires to connect the components to each other.
+
+__Structure:__ The servo motor has 3 pins. I connected the first one to a negative pin, the second to a positive, and the third to a control signal which in this case is the digital PWM signal. I specifically used the digtial PMW pin because they send digital signals and are also 0 or 1 and we want the output signal to be a square wave.
+
+__Purpose of project:__ to be able to give robot joints, specifically the legs, a range of motion, using the servo motors. I used servo motors because they are high-performing with precision and effeciency, as well as being lighter than stepper motors which will help in balance and flexibility.
+ 
+
+
+# Circuit image
+<img width="899" alt="Screenshot 2024-07-02 at 11 18 06 AM" src="https://github.com/Remasj/Task2-elec.eng/assets/144160139/a762725b-4cb6-4a45-8072-f5df73aacde6">
+
+__Image description:__
+I connected the arduino to 6 servo motors along with a small breadboard and 4 1.5V batteries(1.5V x 4 =6V) as the servo cannot run on 5V in arduino only.
+
+# Tinkercad Simulation
+Click on the link below to try out my simulation!
+
+[Tinkercad simulation](https://www.tinkercad.com/things/kzcujmXtH5q-magnificent-amberis/editel?tenant=circuits)
+
+# Code
 ``` C++
 #include <Servo.h>
 
@@ -94,22 +116,20 @@ void loop()
   
 }
 ```
-# code explanation
-1- started by defining the library for Servo  motor.
+# Code explanation
 
-2- initializing all the six servos as servo1, servo2, servo3, etc.
+*Language used is C++
 
-3- set setting all the servo’s input pin with Arduino.
+1- Started by defining the library for Servo motor.
 
--In the void loop() function, we are just rotating all the servo from 0 to 180 degree and then 180 to 0 degree. The delay used in the below code is used to increase or decrease the speed of the servo using the variable ‘i’.
+2- Initialized all the six servos as servo1, servo2, servo3, etc.
+
+3- Set variable to store servo position (pos) to value 0.
+
+4- Set all the servo’s input pin with Arduino.
+
+5- In the void loop() function, we are just rotating all the servo from 0 to 180 degree and then 180 to 0 degree. The delay used in the below code is used to increase or decrease the speed of the servo using the variable ‘i’.
   
 
-
-# circuit image
-<img width="899" alt="Screenshot 2024-07-02 at 11 18 06 AM" src="https://github.com/Remasj/Task2-elec.eng/assets/144160139/a762725b-4cb6-4a45-8072-f5df73aacde6">
-
-__image 1 description:__
-I connected the arduino to 6 servo motors along with a small breadboard and 4 1.5V batteries(1.5V x 4 =6V) as the servo cannot run on 5V in arduino only.
-I connected each servo to positive and negative along with a digtial PMW pin because we want the output signal to be a square wave.
 
 
