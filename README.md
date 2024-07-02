@@ -94,8 +94,22 @@ void loop()
   
 }
 ```
+# code explanation
+1- started by defining the library for Servo  motor.
+
+2- initializing all the six servos as servo1, servo2, servo3, etc.
+
+3- set setting all the servo’s input pin with Arduino.
+
+-In the void loop() function, we are just rotating all the servo from 0 to 180 degree and then 180 to 0 degree. The delay used in the below code is used to increase or decrease the speed of the servo using the variable ‘i’.
+  
+
 
 # circuit image
 <img width="899" alt="Screenshot 2024-07-02 at 11 18 06 AM" src="https://github.com/Remasj/Task2-elec.eng/assets/144160139/a762725b-4cb6-4a45-8072-f5df73aacde6">
+
+__image 1 description:__
+I connected the arduino to 6 servo motors along with a small breadboard and 4 1.5V batteries(1.5V x 4 =6V) as the servo cannot run on 5V in arduino only.
+I connected each servo to positive and negative along with a digtial PMW pin because we want the output signal to be a square wave.
 
 
