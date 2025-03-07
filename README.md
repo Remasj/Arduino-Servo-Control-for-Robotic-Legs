@@ -1,4 +1,4 @@
-# Task2-elec.eng
+
 # Introduction
 
 In this task, I used the app Tinkercad to give me a simulation of how the Arduino Uno R3 can help me power servo motors and eventually use them in robotics.
